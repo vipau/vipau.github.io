@@ -18,8 +18,8 @@ noClasses = false
 unsafe = true
 
 [caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+[caches.images]
+dir = ':cacheDir/images'
 
 [params]
 author = "Vi Pau"
