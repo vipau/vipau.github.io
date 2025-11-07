@@ -1,14 +1,15 @@
 +++
 authors = ["Vi Pau"]
-title = "My custom shell prompt"
+title = "veeship - custom starship theme"
 date = "2025-10-22"
 description = "Fast shell prompt based on Starship with advanced features"
 tags = ["linux", "shell"]
 series = ["linux", "shell"]
 +++
 
-**Download this config file: [starship.toml](/files/starship.toml)**  
-<sup><sub>It's not yet thoroughly documented, and it will be posted to GitHub along with my .zshrc once I polish and comment them.</sub></sup>
+**Download this config file: [starship.toml](https://raw.githubusercontent.com/vipau/zsimple/refs/heads/main/starship.toml)**  
+
+**Try it in Docker (with [zsimple](https://github.com/vipau/zsimple).):** `docker run --rm -it ghcr.io/vipau/zsimple:latest`
 
 Here is my custom shell prompt, designed over the course of a weekend.  
 It uses [Starship](https://starship.rs/) which is very fast as well as cross-shell, allowing me to have the same prompt in bash, zsh, nushell and others. I explicitly disable most of the Starship plugins in my config to make it even faster and cleaner.
