@@ -32,6 +32,11 @@ go.work.sum
 /resources/
 .hugo_build.lock
 
+# Obsidian editing
+content/.obsidian*
+content/images
+content/files
+
 # Editor/IDE
 # .idea/
 # .vscode/
