@@ -2,17 +2,3 @@ footer .container {
   visibility: hidden;
 }
 
-iframe[id^="asciicast-iframe"] {
-  max-width: 550px;    /* Set a maximum width (adjust as needed) */
-  width: 100%;         /* Make it responsive but respect max-width */
-  margin: 0 auto;      /* Center the iframe horizontally */
-  display: block;      /* Ensures the iframe is treated as a block-level element */
-}
-
-div[id^="asciicast-container"] {
-  style: "display: block; float: none; overflow: hidden; padding: 0px; margin: 0.1em 0px; color-scheme: light dark;"
-}
-
-p .powered {
-  font-size: 8px
-}
