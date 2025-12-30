@@ -18,8 +18,11 @@ If you are looking for a .zshrc that has no plugin manager, only 3 highly truste
 #### Full case-insensitive match with tab, including backwards in word
 <script src="https://asciinema.org/a/OviOQxuMxCAiI7HqwJbD4ho3R.js" id="asciicast-OviOQxuMxCAiI7HqwJbD4ho3R" async="true"></script>
 
-#### Embedded man pages
+#### Good tab menu with shift-tab to go backwards
+<script src="https://asciinema.org/a/b2I8E2WxMMCjgK44yfDVLiavt.js" id="asciicast-b2I8E2WxMMCjgK44yfDVLiavt" async="true"></script>
 
+#### Embedded man pages
+<script src="https://asciinema.org/a/iwZLxWe9mxadlniMXbmYB4QKS.js" id="asciicast-iwZLxWe9mxadlniMXbmYB4QKS" async="true"></script>
 
 ## The plugins
 These are the only plugins that this zshrc uses, all from the zsh-users GitHub account:
