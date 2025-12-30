@@ -4,7 +4,6 @@ title = "Proper 1chip SNES PAL to NTSC permament conversion"
 date = "2025-12-30"
 description = "How to convert a PAL SNES to NTSC"
 tags = ["snes", "mod"]
-series = ["snes", "mod"]
 +++
 
 # How to convert a PAL 1CHIP SNES to NTSC properly (semi-permanent mod)

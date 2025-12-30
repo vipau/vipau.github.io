@@ -4,7 +4,6 @@ title = "veeship - custom starship theme"
 date = "2025-10-22"
 description = "Fast shell prompt based on Starship with advanced features"
 tags = ["linux", "shell"]
-series = ["linux", "shell"]
 +++
 
 **Download this config file: [starship.toml](https://raw.githubusercontent.com/vipau/zsimple/refs/heads/main/starship.toml)**  
