@@ -2,3 +2,9 @@ footer .container {
   visibility: hidden;
 }
 
+iframe[id^="asciicast-iframe"] {
+  max-width: 550px;    /* Set a maximum width (adjust as needed) */
+  width: 100%;         /* Make it responsive but respect max-width */
+  margin: 0 auto;      /* Center the iframe horizontally */
+  display: block;      /* Ensures the iframe is treated as a block-level element */
+}
