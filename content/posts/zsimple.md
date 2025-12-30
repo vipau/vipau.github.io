@@ -13,12 +13,12 @@ Or with a minimal configuration: `docker run --rm -it ghcr.io/vipau/zsimple:void
 If you are looking for a .zshrc that has no plugin manager, only 3 highly trusted plugins, and extremely minimal but modern config and that works well on Linux and MacOS, you... I hope you found it here, and if something doesn't work on your setup, shoot me an email or [open an issue on GitHub](https://github.com/vipau/zsimple/issues) :)
 ## Showcase
 Full case-insensitive match with tab, including backwards in word + good tab menu with shift-tab to go backwards
-<script src="https://asciinema.org/a/b2I8E2WxMMCjgK44yfDVLiavt.js" id="asciicast-b2I8E2WxMMCjgK44yfDVLiavt" async="true" data-autoplay="1" data-loop="1" data-size="small"></script>
+<script src="https://asciinema.org/a/yGPPnSoexqoLcsovDHvpoF72K.js" id="asciicast-yGPPnSoexqoLcsovDHvpoF72K" async="true" data-autoplay="1" data-loop="1"></script>
 
 Embedded man pages
 <script src="https://asciinema.org/a/iwZLxWe9mxadlniMXbmYB4QKS.js" id="asciicast-iwZLxWe9mxadlniMXbmYB4QKS" async="true" data-autoplay="1" data-loop="1"></script>
 
-Autocompletions and autosuggestions
+`Autocompletions and autosuggestions`
 <script src="https://asciinema.org/a/amMp6ufGgiKWSi7XAHUNeum5Y.js" id="asciicast-amMp6ufGgiKWSi7XAHUNeum5Y" async="true" data-autoplay="1" data-loop="1"></script>
 ## The plugins
 These are the only plugins that this zshrc uses, all from the zsh-users GitHub account:
