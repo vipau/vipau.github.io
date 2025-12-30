@@ -13,7 +13,7 @@ If you are looking for a .zshrc that has no plugin manager, only 3 highly truste
 
 ## Features
 #### Full case-insensitive match with tab, including backwards in word + good tab menu with shift-tab to go backwards
-<script src="https://asciinema.org/a/b2I8E2WxMMCjgK44yfDVLiavt.js" id="asciicast-b2I8E2WxMMCjgK44yfDVLiavt" async="true" data-autoplay="1" data-loop="1"></script>
+<script src="https://asciinema.org/a/b2I8E2WxMMCjgK44yfDVLiavt.js" id="asciicast-b2I8E2WxMMCjgK44yfDVLiavt" async="true" data-autoplay="1" data-loop="1" data-size="small"></script>
 #### Embedded man pages
 <script src="https://asciinema.org/a/iwZLxWe9mxadlniMXbmYB4QKS.js" id="asciicast-iwZLxWe9mxadlniMXbmYB4QKS" async="true" data-autoplay="1" data-loop="1"></script>
 #### Autocompletions and autosuggestions
