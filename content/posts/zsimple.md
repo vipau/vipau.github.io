@@ -13,16 +13,14 @@ series = ["linux", "shell"]
 If you are looking for a .zshrc that has no plugin manager, only 3 highly trusted plugins, and extremely minimal but modern config and that works well on Linux and MacOS, you... I hope you found it here, and if something doesn't work on your setup, shoot me an email or [open an issue on GitHub](https://github.com/vipau/zsimple/issues) :)
 
 ## Features
-
 #### Full case-insensitive match with tab, including backwards in word
-<script src="https://asciinema.org/a/OviOQxuMxCAiI7HqwJbD4ho3R.js" id="asciicast-OviOQxuMxCAiI7HqwJbD4ho3R" async="true"></script>
-
+<script src="https://asciinema.org/a/OviOQxuMxCAiI7HqwJbD4ho3R.js" id="asciicast-OviOQxuMxCAiI7HqwJbD4ho3R" async="true" data-autoplay="1" data-loop="1"></script>
 #### Good tab menu with shift-tab to go backwards
-<script src="https://asciinema.org/a/b2I8E2WxMMCjgK44yfDVLiavt.js" id="asciicast-b2I8E2WxMMCjgK44yfDVLiavt" async="true"></script>
-
+<script src="https://asciinema.org/a/b2I8E2WxMMCjgK44yfDVLiavt.js" id="asciicast-b2I8E2WxMMCjgK44yfDVLiavt" async="true" data-autoplay="1" data-loop="1"></script>
 #### Embedded man pages
-<script src="https://asciinema.org/a/iwZLxWe9mxadlniMXbmYB4QKS.js" id="asciicast-iwZLxWe9mxadlniMXbmYB4QKS" async="true"></script>
-
+<script src="https://asciinema.org/a/iwZLxWe9mxadlniMXbmYB4QKS.js" id="asciicast-iwZLxWe9mxadlniMXbmYB4QKS" async="true" data-autoplay="1" data-loop="1"></script>
+#### Autocompletions and autosuggestions
+<script src="https://asciinema.org/a/j72ywqxpJP17t06mgxhiULwpg.js" id="asciicast-j72ywqxpJP17t06mgxhiULwpg" async="true" data-autoplay="1" data-loop="1"></script>
 ## The plugins
 These are the only plugins that this zshrc uses, all from the zsh-users GitHub account:
 * https://github.com/zsh-users/zsh-syntax-highlightingw
