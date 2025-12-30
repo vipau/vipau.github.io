@@ -37,7 +37,7 @@ The .zshrc does the following:
 2. Load ~/.exports
 3. Try to load plugins from your system path (check it if you installed the plugins from packages), homebrew path, or our plugin dir
 4. If all fail, git clones the plugins to the plugin dir and loads them
-5. Set a lot more options to make zsh comfy.
+5. Set a lot more built-in options to make zsh comfy.
 6. Load ~/.aliases
 7. Only if [starship](https://starship.rs/) is installed, launch it (see [veeship](https://vipau.dev/posts/veeship/))
 
