@@ -28,13 +28,15 @@ For now, I'll limit it to the guide.
 
 ## Hardware needed
 1. A 21.47727 MHz (NTSC) crystal oscillator, possibly more than one (see later)
-2. A JP/EU SNES flashcart to play NTSC ROMs on PAL consoles. (the shape of the cartridge is different between USA and EU/JP)
+2. Soldering iron, solder, wire, willpower
+3. A JP/EU SNES flashcart to play NTSC ROMs on PAL consoles. (the shape of the cartridge is different between USA and EU/JP)
+4. (optional) 17.734475 Mhz crystal, if you want to go back to PAL and something happened to the old one
 
 ## The procedure
 The procedure is actually quite easy, and the mod only consists of 3 steps:
 1. Connect pin 111 of the CPU (S-CPUN) to ground (GND). This is what tells the SNES to run in NTSC mode at 60Hz. In the 1chip revision, this pin controls both CPU and PPU.
 2. Connect pin 9 of S-RGB to +5V. This tells S-RGB to create a NTSC signal instead of a PAL signal.
-3. Replace the X1 crystal oscillator with a 21.47727 MHz one. I had to try different crystals to find one that works, but the one I found was from AliExpress.
+3. Replace the X1 crystal oscillator with a 21.47727 MHz one. I had to try different crystals to find one that works, but the one I found was from AliExpress. One from a major electronics supplier did not work for the purpose and I am not entirely sure why (load capacitance?).
 
 If you did everything correctly, both RGB and RCA output should still work, of course you need to use a flashcart with NTSC ROMs. PAL games will now run slow.
 
