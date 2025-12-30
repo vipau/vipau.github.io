@@ -8,3 +8,7 @@ iframe[id^="asciicast-iframe"] {
   margin: 0 auto;      /* Center the iframe horizontally */
   display: block;      /* Ensures the iframe is treated as a block-level element */
 }
+
+div[id^="asciicast-container"] {
+  margin: 0.05em;
+}
