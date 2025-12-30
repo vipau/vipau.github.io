@@ -5,7 +5,6 @@ date = "2025-11-07"
 description = "Portable zsh configuration that provides a modern and comfy feel while remaining blazing fast"
 tags = ["linux", "shell"]
 series = ["linux", "shell"]
-draft = "true"
 +++
 
 # [zsimple](https://github.com/vipau/zsimple) - Very minimal, modern zsh environment
