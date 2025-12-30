@@ -13,7 +13,14 @@ draft = "true"
 ## Why zsimple
 If you are looking for a .zshrc that has no plugin manager, only 3 highly trusted plugins, and extremely minimal but modern config and that works well on Linux and MacOS, you... I hope you found it here, and if something doesn't work on your setup, shoot me an email or [open an issue on GitHub](https://github.com/vipau/zsimple/issues) :)
 
-Todo: add better description of the modern features that this enables.
+## Features
+
+#### Full case-insensitive match with tab, including backwards in word
+<script src="https://asciinema.org/a/OviOQxuMxCAiI7HqwJbD4ho3R.js" id="asciicast-OviOQxuMxCAiI7HqwJbD4ho3R" async="true"></script>
+
+#### Embedded man pages
+
+
 ## The plugins
 These are the only plugins that this zshrc uses, all from the zsh-users GitHub account:
 * https://github.com/zsh-users/zsh-syntax-highlightingw
