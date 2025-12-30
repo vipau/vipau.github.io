@@ -10,5 +10,9 @@ iframe[id^="asciicast-iframe"] {
 }
 
 div[id^="asciicast-container"] {
-  margin: 0.05em;
+  style: "display: block; float: none; overflow: hidden; padding: 0px; margin: 0.1em 0px; color-scheme: light dark;"
+}
+
+p .powered {
+  font-size: 8px
 }
