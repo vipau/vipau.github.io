@@ -5,8 +5,7 @@ date = "2025-11-07"
 description = "Portable zsh configuration that provides a modern and comfy feel while remaining blazing fast"
 tags = ["linux", "shell"]
 +++
-# [View on GitHub](https://github.com/vipau/zsimple)
-(for install instructions)
+# [View on GitHub](https://github.com/vipau/zsimple) <font size=2>(for install instructions)</font>
 
 **Try it in Docker (with [veeship](https://vipau.dev/posts/veeship) included):** `docker run --rm -it ghcr.io/vipau/zsimple:latest`  
 Or with a minimal configuration: `docker run --rm -it ghcr.io/vipau/zsimple:void-latest`
