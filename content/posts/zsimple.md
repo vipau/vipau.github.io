@@ -5,9 +5,8 @@ date = "2025-11-07"
 description = "Portable zsh configuration that provides a modern and comfy feel while remaining blazing fast"
 tags = ["linux", "shell"]
 +++
-
-# [zsimple](https://github.com/vipau/zsimple) - Very minimal, modern zsh environment
-
+# [View on GitHub](https://github.com/vipau/zsimple) 
+**Try it in Docker (with [veeship](https://github.com/vipau/veeship).):** `docker run --rm -it ghcr.io/vipau/zsimple:latest`
 ## Why zsimple
 If you are looking for a .zshrc that has no plugin manager, only 3 highly trusted plugins, and extremely minimal but modern config and that works well on Linux and MacOS, you... I hope you found it here, and if something doesn't work on your setup, shoot me an email or [open an issue on GitHub](https://github.com/vipau/zsimple/issues) :)
 

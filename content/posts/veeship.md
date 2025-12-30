@@ -5,9 +5,8 @@ date = "2025-10-22"
 description = "Fast shell prompt based on Starship with advanced features"
 tags = ["linux", "shell"]
 +++
-
+# [View on GitHub](https://github.com/vipau/zsimple) 
 **Download this config file: [starship.toml](https://raw.githubusercontent.com/vipau/zsimple/refs/heads/main/starship.toml)**  
-
 **Try it in Docker (with [zsimple](https://github.com/vipau/zsimple).):** `docker run --rm -it ghcr.io/vipau/zsimple:latest`
 
 Here is my custom shell prompt, designed over the course of a weekend.  
