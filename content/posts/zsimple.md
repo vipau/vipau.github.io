@@ -19,7 +19,7 @@ Embedded man pages
 <script src="https://asciinema.org/a/iwZLxWe9mxadlniMXbmYB4QKS.js" id="asciicast-iwZLxWe9mxadlniMXbmYB4QKS" async="true" data-autoplay="1" data-loop="1"></script>
 
 Autocompletions and autosuggestions
-<script src="https://asciinema.org/a/j72ywqxpJP17t06mgxhiULwpg.js" id="asciicast-j72ywqxpJP17t06mgxhiULwpg" async="true" data-autoplay="1" data-loop="1"></script>
+<script src="https://asciinema.org/a/amMp6ufGgiKWSi7XAHUNeum5Y.js" id="asciicast-amMp6ufGgiKWSi7XAHUNeum5Y" async="true" data-autoplay="1" data-loop="1"></script>
 ## The plugins
 These are the only plugins that this zshrc uses, all from the zsh-users GitHub account:
 * https://github.com/zsh-users/zsh-syntax-highlightingw
