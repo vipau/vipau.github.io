@@ -12,7 +12,7 @@ Or with a minimal configuration: `docker run --rm -it ghcr.io/vipau/zsimple:void
 ## Why zsimple
 If you are looking for a .zshrc that has no plugin manager, only 3 highly trusted plugins, and extremely minimal but modern config and that works well on Linux and MacOS, you... I hope you found it here, and if something doesn't work on your setup, shoot me an email or [open an issue on GitHub](https://github.com/vipau/zsimple/issues) :)
 ## Showcase
-Full case-insensitive match with tab, including backwards in word + good tab menu with shift-tab to go backwards
+Full match with tab, including backwards in word + good tab menu with shift-tab to go backwards
 <script src="https://asciinema.org/a/X7Shqpf00dxtCvMCRN7YCMYCU.js" id="asciicast-X7Shqpf00dxtCvMCRN7YCMYCU" async="true" data-autoplay="1" data-loop="1"></script>
 
 Embedded man pages
