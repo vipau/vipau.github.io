@@ -70,11 +70,11 @@ icon = "fa-brands fa-github fa-2x"
 weight = 3
 url = "https://github.com/vipau/"
 
-[[params.social]]
-name = "Stack Exchange Network Profile"
-icon = "fa-brands fa-stack-exchange fa-2x"
-weight = 5
-url = "https://stackexchange.com/users/1498720/vi-pau?tab=accounts"
+#[[params.social]]
+#name = "Stack Exchange Network Profile"
+#icon = "fa-brands fa-stack-exchange fa-2x"
+#weight = 5
+#url = "https://stackexchange.com/users/1498720/vi-pau?tab=accounts"
 
 [[params.social]]
 name = "Email"
