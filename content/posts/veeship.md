@@ -5,7 +5,7 @@ date = "2025-10-22"
 description = "Fast shell prompt based on Starship with advanced features"
 tags = ["linux", "shell"]
 +++
-# [View on GitHub](https://github.com/vipau/zsimple) 
+# [View on GitHub](https://github.com/vipau/veeship) 
 **Download this config file: [starship.toml](https://raw.githubusercontent.com/vipau/zsimple/refs/heads/main/starship.toml)**  
 **Try it in Docker (with [zsimple](https://vipau.dev/posts/zsimple).):** `docker run --rm -it ghcr.io/vipau/zsimple:latest`
 
