@@ -1,0 +1,28 @@
+# Upsun configuration, generated using AI at: 2026-09-16T17:21:24.862Z
+# AI can make mistakes. Please modify this file to suit your needs.
+applications:
+  app:
+    type: composable:25.11
+    stack:
+      packages:
+        - hugo  # Use Hugo from Nix packages for static site generation
+        - go    # Required for Hugo modules and theme dependencies
+    hooks:
+      build: |
+        set -ex
+        hugo --destination=public
+    web:
+      commands:
+        start: sleep infinity  # Static site, no server process needed
+      locations:
+        /:
+          root: public
+          index:
+            - index.html
+          expires: 1h
+          scripts: false
+
+routes:
+  https://{default}/:
+    type: upstream
+    upstream: app:http
