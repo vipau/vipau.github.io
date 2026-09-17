@@ -7,8 +7,11 @@ applications:
       packages:
         - hugo  # Use Hugo from Nix packages for static site generation
         - go    # Required for Hugo modules and theme dependencies
+        - curl
     hooks:
       build: |
+        echo "Setting A record on Desec..."    
+        echo "{\"records\": [\"$(curl -s https://ifconfig.me/ip)\"]}" | curl -X PATCH https://desec.io/api/v1/domains/vipau.dev/rrsets/@/A/ --header "Authorization: Token ${DESEC_TOKEN}" --header "Content-Type: application/json" --data @-
         set -ex
         hugo --destination=public
     web:
