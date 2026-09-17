@@ -23,7 +23,7 @@ hugo server -D    # http://localhost:1313, -D includes drafts
 To reproduce what Upsun builds:
 
 ```sh
-hugo --destination=public
+hugo --destination=public --minify
 ```
 
 ## Deployment
@@ -35,3 +35,8 @@ at the region gateway through the [deSEC](https://desec.io/) API, using the
 
 Requests that do not match a file in `public/` reach `scripts/notfound.py`,
 which returns Hugo's 404 page; without it Upsun answers them with a 502.
+
+`baseURL` is fixed to the production domain. Hugo runs in the build hook, where
+`PLATFORM_ROUTES` is not set yet, so a preview environment cannot know its own
+URL: pages render fine there, but absolute URLs (RSS, sitemap, Open Graph)
+still point at vipau.dev.
