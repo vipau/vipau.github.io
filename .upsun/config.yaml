@@ -47,6 +47,7 @@ routes:
   https://{default}/:
     type: upstream
     upstream: app:http
+  # Serve a single canonical hostname.
   https://www.{default}/:
-    type: upstream
-    upstream: app:http
+    type: redirect
+    to: https://{default}/
