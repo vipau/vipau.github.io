@@ -3,7 +3,7 @@ authors = ["Vi Pau"]
 title = "Pebble Index 01 is not open source"
 date = "2026-08-31"
 description = "A product advertised and sold as fully open is breaking its promises."
-tags = []
+tags = ["open source", "hardware"]
 +++
 
 I am a big fan of the rePebble/Pebble Index 01, a wearable ring with a microphone and a button that sends recordings to your phone.
