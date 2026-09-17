@@ -22,7 +22,7 @@ Autocompletions and autosuggestions
 <script src="https://asciinema.org/a/9lGfZxzM992FUCSSpI5lsGRXT.js" id="asciicast-9lGfZxzM992FUCSSpI5lsGRXT" async="true" data-autoplay="1" data-loop="1"></script>
 ## The plugins
 These are the only plugins that this zshrc uses, all from the zsh-users GitHub account:
-* https://github.com/zsh-users/zsh-syntax-highlightingw
+* https://github.com/zsh-users/zsh-syntax-highlighting
 * https://github.com/zsh-users/zsh-autosuggestions
 * https://github.com/zsh-users/zsh-completions
 
