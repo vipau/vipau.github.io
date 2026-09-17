@@ -25,7 +25,9 @@ applications:
           echo "DESEC_TOKEN is not set, skipping DNS update."
           exit 0
         fi
-        gateway_ip="$(dig +short gw.eu-5.platformsh.site | head -n1)"
+        # +short prints the whole chain, so drop anything that is not an IPv4
+        # address in case the gateway record ever becomes a CNAME.
+        gateway_ip="$(dig +short A gw.eu-5.platformsh.site | grep -Em1 '^[0-9]+(\.[0-9]+){3}$' || true)"
         if [ -z "${gateway_ip}" ]; then
           echo "Could not resolve the gateway IP, skipping DNS update."
           exit 0
