@@ -2,7 +2,7 @@ baseURL = "https://vipau.dev"
 #canonifyURLs = true
 title = "Vi Pau"
 theme = "hugo-coder"
-languageCode = "en"
+locale = "en"
 defaultContentLanguage = "en"
 enableEmoji = false
 
@@ -91,7 +91,7 @@ rel = "alternate"
 type = "application/rss+xml"
 
 [languages.en]
-languageName = ":uk:"
+label = ":uk:"
 
 [[languages.en.menu.main]]
 name = "About"
