@@ -53,32 +53,38 @@ applications:
             - index.html
           expires: 1h
           scripts: false
-          headers:
+          headers: &security_headers
             X-Content-Type-Options: nosniff
             Referrer-Policy: strict-origin-when-cross-origin
             X-Frame-Options: SAMEORIGIN
+            Strict-Transport-Security: max-age=31536000
         # Hugo fingerprints these filenames, so they can be cached forever.
         /css:
           root: public/css
           expires: 1y
           scripts: false
+          headers: *security_headers
         /js:
           root: public/js
           expires: 1y
           scripts: false
+          headers: *security_headers
         /fonts:
           root: public/fonts
           expires: 1y
           scripts: false
+          headers: *security_headers
         # Not fingerprinted, but they change rarely.
         /images:
           root: public/images
           expires: 7d
           scripts: false
+          headers: *security_headers
         /files:
           root: public/files
           expires: 7d
           scripts: false
+          headers: *security_headers
 
 routes:
   https://{default}/:
