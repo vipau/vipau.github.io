@@ -36,11 +36,38 @@ applications:
       commands:
         start: sleep infinity
       locations:
+        # HTML is not fingerprinted, so it needs a short TTL.
         /:
           root: public
           index:
             - index.html
           expires: 1h
+          scripts: false
+          headers:
+            X-Content-Type-Options: nosniff
+            Referrer-Policy: strict-origin-when-cross-origin
+            X-Frame-Options: SAMEORIGIN
+        # Hugo fingerprints these filenames, so they can be cached forever.
+        /css:
+          root: public/css
+          expires: 1y
+          scripts: false
+        /js:
+          root: public/js
+          expires: 1y
+          scripts: false
+        /fonts:
+          root: public/fonts
+          expires: 1y
+          scripts: false
+        # Not fingerprinted, but they change rarely.
+        /images:
+          root: public/images
+          expires: 7d
+          scripts: false
+        /files:
+          root: public/files
+          expires: 7d
           scripts: false
 
 routes:
