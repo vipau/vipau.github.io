@@ -1,5 +1,3 @@
-# Upsun configuration, generated using AI at: 2026-09-16T17:21:24.862Z
-# AI can make mistakes. Please modify this file to suit your needs.
 applications:
   app:
     type: composable:25.11
@@ -27,5 +25,8 @@ applications:
 
 routes:
   https://{default}/:
+    type: upstream
+    upstream: app:http
+  https://www.{default}/:
     type: upstream
     upstream: app:http
