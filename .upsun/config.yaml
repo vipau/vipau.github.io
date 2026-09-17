@@ -94,3 +94,10 @@ routes:
   https://www.{default}/:
     type: redirect
     to: https://{default}/
+  # MTA-STS policies must be fetched over HTTPS from mta-sts.<domain> with a
+  # valid certificate, and the spec forbids redirects, so this host has to be a
+  # real route. It serves the same public/ as the apex; only
+  # /.well-known/mta-sts.txt is ever requested there.
+  https://mta-sts.{default}/:
+    type: upstream
+    upstream: app:http
