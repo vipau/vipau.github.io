@@ -8,10 +8,30 @@ applications:
         - dig   # Needed to find the IP of the gateway
     hooks:
       build: |
-        echo "{\"records\": [\"$(dig +short gw.eu-5.platformsh.site)\"]}" | curl -sX PATCH https://desec.io/api/v1/domains/vipau.dev/rrsets/@/A/ --header "Authorization: Token ${DESEC_TOKEN}" --header "Content-Type: application/json" --data @-
-        echo
         set -e
         hugo --destination=public
+      # Point the apex A record at the region gateway. Runs after every deploy
+      # (unlike the build hook, which is skipped when Upsun reuses a cached
+      # build) and only from production, so preview environments leave DNS
+      # alone. Failures are logged but never fail the deploy.
+      post_deploy: |
+        set -u
+        if [ "${PLATFORM_ENVIRONMENT_TYPE:-}" != production ]; then
+          echo "Not production, skipping DNS update."
+          exit 0
+        fi
+        gateway_ip="$(dig +short gw.eu-5.platformsh.site | head -n1)"
+        if [ -z "${gateway_ip}" ]; then
+          echo "Could not resolve the gateway IP, skipping DNS update."
+          exit 0
+        fi
+        echo "Setting A record on deSEC to ${gateway_ip}..."
+        curl -sSf -X PATCH https://desec.io/api/v1/domains/vipau.dev/rrsets/@/A/ \
+          --header "Authorization: Token ${DESEC_TOKEN}" \
+          --header "Content-Type: application/json" \
+          --data "{\"records\": [\"${gateway_ip}\"]}" \
+          || echo "deSEC update failed, leaving the existing record in place."
+        echo
     web:
       commands:
         start: sleep infinity
