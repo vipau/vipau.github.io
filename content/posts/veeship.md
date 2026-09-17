@@ -19,7 +19,7 @@ It uses Powerline font symbols, but it won't look too broken if you use it on a 
 
 ---
 
-![](/images/prompt-1.png)
+![Prompt reading "vi at ~ in zsh on Void", then a filler dash rule, then "[0] took 3m6s at 26/Oct/25-07:02"](/images/prompt-1.png)
 
 Right away, you can notice:
 * indicators for the shell and OS in use. This is very useful when you have the same looking prompt everywhere.  
@@ -31,37 +31,37 @@ Right away, you can notice:
 
 The directory indicator detects how much space it has to show the current working dir, but it will always truncate at 3 levels maximum to not clutter the screen. I use `pwd` if needed. This is what works best for me, but everything is easily configurable to the user's liking.  
 
-![](/images/prompt-2.png)
+![Prompt reading "vi at [...]/posts/page/1 in nu on MacOS", with the deeper path truncated to its last three levels](/images/prompt-2.png)
 
 ---
 
 The hostname is hidden when on a local machine, but it will be visible when connected via SSH, along with a red SSH warning. 
 
-![](/images/prompt-3.png)
+![Prompt reading "vi@remote-machine" followed by a red "<SSH>" marker, then "at ~ in zsh on Void"](/images/prompt-3.png)
 
 ---
 
 When logged in as root, the username will be red on black, and flashing if your terminal supports it.
 
-![](/images/prompt-7.png)
+![Prompt where "root" is highlighted in red on black, reading "root@remote-machine <SSH> at /opt in zsh on Void"](/images/prompt-7.png)
 
 ---
 
 When a process exits with a non-0 code, the status indicator will be red and show the common meaning of the exit code, and if not found, the actual code. The config includes a comment on how to change it to show the integer code only. I wanted to show both but limitations of Starship make it hard to make it pretty (I plan on submitting a PR)
 
-![](/images/prompt-4.png)
+![Prompt whose status indicator shows a red "[USAGE]" in place of the usual "[0]"](/images/prompt-4.png)
 
 ---
 
 It will also show if the last process was killed by a signal, and the common meaning of the signal if found.
 
-![](/images/prompt-5.png)
+![Prompt whose status indicator shows a red "[signal 9/KILL]"](/images/prompt-5.png)
 
 ---
 
 If the last command was a pipe, the exit status for the processes in the pipe will be shown.
 
-![](/images/prompt-6.png)
+![Running `echo 'test ' | bash -c 'exit 4'`; the next prompt shows "[[0]|[4]] => 4", one status per stage of the pipe](/images/prompt-6.png)
 
 ---
 

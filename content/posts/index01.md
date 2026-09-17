@@ -14,9 +14,9 @@ I believe the idea is quite genius, but unfortunately, the device is being sold 
 On the Index 01 official website, we can see multiple claims of the software being open:
 
 
-![](/images/index-0.png)  
-![](/images/index-1.png)  
-![](/images/index-2.png)
+![Feature list from the Index 01 site, including a checked item reading "Customizable and open source"](/images/index-0.png)  
+![FAQ entry "Is it secure and private?" answering that recordings are processed locally on your phone in the "open-source Pebble app"](/images/index-1.png)  
+![Spec table listing "iPhone and Android apps" as rePebble.com/app and "Open Source" as Github, both check-marked](/images/index-2.png)
 
 While this doesn't claim that the firmware is open source, although a customer would gladly expect that given the promises, it does claim that the Pebble app for smartphones is open source.
 
@@ -27,6 +27,6 @@ A developer trying to build a MacOS app that could interact with the ring got th
 
 [GitHub issue](https://github.com/coredevices/mobileapp/issues/333)
 
-![](/images/index-3.png)
+![GitHub thread where ericmigi says the ring firmware is licensed from a friend, and when asked about the client side of talking to the ring replies "oh right, that's also closed source (friend's repo). sorry!"](/images/index-3.png)
 
 This limitation makes it impossible to make an app that communicates with the ring, forcing users to use the official Pebble app. This is the opposite of open source, it's vendor lock-in at its finest.
