@@ -1,0 +1,23 @@
+{{- /*
+  Render markdown images from assets/ so the browser gets intrinsic dimensions
+  (no layout shift) and can defer offscreen loads. Falls back to a plain <img>
+  for anything that is not a local asset, e.g. remote URLs or static/ files.
+*/ -}}
+{{- $src := .Destination -}}
+{{- $res := "" -}}
+{{- with .PageInner.Resources.GetMatch $src -}}
+  {{- $res = . -}}
+{{- else -}}
+  {{- $res = resources.Get $src -}}
+{{- end -}}
+{{- if $res -}}
+  <img src="{{ $res.RelPermalink }}" alt="{{ .Text }}"
+    {{- with .Title }} title="{{ . }}"{{ end }}
+    width="{{ $res.Width }}" height="{{ $res.Height }}"
+    loading="lazy" decoding="async">
+{{- else -}}
+  {{- warnf "render-image: no resource found for %q in %s" $src .Page.File.Path -}}
+  <img src="{{ $src }}" alt="{{ .Text }}"
+    {{- with .Title }} title="{{ . }}"{{ end }}
+    loading="lazy" decoding="async">
+{{- end -}}

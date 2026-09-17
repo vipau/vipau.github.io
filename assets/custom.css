@@ -2,6 +2,13 @@ footer .container {
   visibility: hidden;
 }
 
+/* Images carry explicit width/height so the browser can reserve space before
+   they load. The theme caps them at max-width: 100%, so the height has to
+   follow along or anything wider than the column gets stretched. */
+img {
+  height: auto;
+}
+
 iframe[id^="asciicast-iframe"] {
   max-width: 550px;    /* Set a maximum width (adjust as needed) */
   width: 100%;         /* Make it responsive but respect max-width */
