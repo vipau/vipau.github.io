@@ -32,3 +32,6 @@ Pushing to `main` triggers an Upsun build (`.upsun/config.yaml`). After a
 production deploy, the `post_deploy` hook points the `vipau.dev` apex A record
 at the region gateway through the [deSEC](https://desec.io/) API, using the
 `DESEC_TOKEN` environment variable. Preview environments skip that step.
+
+Requests that do not match a file in `public/` reach `scripts/notfound.py`,
+which returns Hugo's 404 page; without it Upsun answers them with a 502.

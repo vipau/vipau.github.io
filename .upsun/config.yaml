@@ -3,9 +3,10 @@ applications:
     type: composable:26.05
     stack:
       packages:
-        - hugo  # Use Hugo from Nix packages for static site generation
-        - curl  # Needed for the DNS API call
-        - dig   # Needed to find the IP of the gateway
+        - hugo       # Use Hugo from Nix packages for static site generation
+        - curl       # Needed for the DNS API call
+        - dig        # Needed to find the IP of the gateway
+        - python313  # Runs the 404 upstream, see scripts/notfound.py
     hooks:
       build: |
         set -e
@@ -37,8 +38,13 @@ applications:
           || echo "deSEC update failed, leaving the existing record in place."
         echo
     web:
+      upstream:
+        socket_family: tcp
       commands:
-        start: sleep infinity
+        # Anything the locations below do not match is forwarded here. Without
+        # a listener those requests come back as a 502; this serves Hugo's own
+        # 404 page with the right status instead.
+        start: python3 scripts/notfound.py
       locations:
         # HTML is not fingerprinted, so it needs a short TTL.
         /:
