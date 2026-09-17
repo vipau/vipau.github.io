@@ -9,7 +9,7 @@ applications:
     hooks:
       build: |
         set -e
-        hugo --destination=public
+        hugo --destination=public --minify
       # Point the apex A record at the region gateway. Runs after every deploy
       # (unlike the build hook, which is skipped when Upsun reuses a cached
       # build) and only from production, so preview environments leave DNS
