@@ -10,13 +10,12 @@ applications:
       build: |
         set -ex
         hugo --destination=public
-      post-deploy: |
+      post_deploy: |
         echo "Setting A record on Desec..."    
-        echo "{\"records\": [\"$(curl -s https://ifconfig.me/ip)\"]}" | curl -X PATCH https://desec.io/api/v1/domains/vipau.dev/rrsets/@/A/ --header "Authorization: Token ${DESEC_TOKEN}" --header "Content-Type: application/json" --data @-
 
     web:
       commands:
-        start: sleep infinity  # Static site, no server process needed
+        start: 'echo "{\"records\": [\"$(curl -s https://ifconfig.me/ip)\"]}" | curl -X PATCH https://desec.io/api/v1/domains/vipau.dev/rrsets/@/A/ --header "Authorization: Token ${DESEC_TOKEN}" --header "Content-Type: application/json" --data @- && sleep infinity'  # Static site, no server process needed
       locations:
         /:
           root: public
