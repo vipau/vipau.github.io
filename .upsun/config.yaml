@@ -9,8 +9,9 @@ applications:
         - dig   # Needed to find the IP of the gateway
     hooks:
       build: |
-        echo "{\"records\": [\"$(dig +short gw.eu-5.platformsh.site)\"]}" | curl -X PATCH https://desec.io/api/v1/domains/vipau.dev/rrsets/@/A/ --header "Authorization: Token ${DESEC_TOKEN}" --header "Content-Type: application/json" --data @-
-        set -ex
+        echo "{\"records\": [\"$(dig +short gw.eu-5.platformsh.site)\"]}" | curl -sX PATCH https://desec.io/api/v1/domains/vipau.dev/rrsets/@/A/ --header "Authorization: Token ${DESEC_TOKEN}" --header "Content-Type: application/json" --data @-
+        echo
+        set -e
         hugo --destination=public
     web:
       commands:
