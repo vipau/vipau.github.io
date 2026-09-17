@@ -20,6 +20,10 @@ applications:
           echo "Not production, skipping DNS update."
           exit 0
         fi
+        if [ -z "${DESEC_TOKEN:-}" ]; then
+          echo "DESEC_TOKEN is not set, skipping DNS update."
+          exit 0
+        fi
         gateway_ip="$(dig +short gw.eu-5.platformsh.site | head -n1)"
         if [ -z "${gateway_ip}" ]; then
           echo "Could not resolve the gateway IP, skipping DNS update."
