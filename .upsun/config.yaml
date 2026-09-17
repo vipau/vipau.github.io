@@ -4,7 +4,6 @@ applications:
     stack:
       packages:
         - hugo  # Use Hugo from Nix packages for static site generation
-        - go    # Required for Hugo modules and theme dependencies
         - curl  # Needed for the DNS API call
         - dig   # Needed to find the IP of the gateway
     hooks:
