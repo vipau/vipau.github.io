@@ -1,6 +1,6 @@
 applications:
   app:
-    type: composable:25.11
+    type: composable:26.05
     stack:
       packages:
         - hugo  # Use Hugo from Nix packages for static site generation
